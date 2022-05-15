@@ -1,7 +1,8 @@
 from cgitb import text
 from bs4 import BeautifulSoup
+import re
 
-with open('C:/Users/Eugene/Desktop/QA/scrap_tutorial/lesson1/blank/index.html') as file:
+with open('tut_1\index.html') as file:
     src = file.read()
     
 soup = BeautifulSoup(src, 'lxml')
@@ -52,3 +53,41 @@ soup = BeautifulSoup(src, 'lxml')
 #     item_text = item.text
 #     item_url = item.get('href')
 #     print(f'{item_text} : {item_url}')
+
+
+##################### еще способы ходить по DOM дереву
+# Методы .find_parent() и .find_parents()
+# post_div = soup.find(class_='post__text').find_parent()
+# post_div = soup.find(class_='post__text').find_parent('div', 'user__post')
+# post_div = soup.find(class_='post__text').find_parents()
+
+# .next_element .previous_element
+# Так как перенос строки это тоже елемент DOM, то он и выведет нам его в этом случае
+# next_el = soup.find(class_='post__title').next_element 
+# Чтобы исправить этот момент, мы можем еще раз вызвать .next_element
+# next_el = soup.find(class_='post__title').next_element.next_element.text
+
+# Но еще есть похожий метод, который сразу вернет нам следующий элемент, find_next()
+# next_el = soup.find(class_='post__title').find_next().text
+# Точно так же работает и previous_element() только снизу вверх
+
+# .find_next_sibling() .find_previous_sibling() Они возвращают следующий и предыдущий элемент внутри искомого тега
+# next_sib = soup.find(class_='post__title').find_next_sibling()
+# next_sib = soup.find(class_='post__text').find_previous_sibling()
+# Комбинировать методы можем как угодно, например
+# next_sib = soup.find(class_='post__date').find_previous_sibling().find_next().text
+
+# Соберем все ссылки в конце документа
+# links = soup.find(class_='some__links').find_all('a')
+# for link in links:
+    # link_href_attr = link.get('href')
+    # Парсить содержимое можно не только с помощью get, но и просто обращаясь к нужному атрибуту
+    # link_href_attr = link.['href']
+    # link_data_attr = link.get('data-attr')
+    # print(f'{link_data_attr} : {link_href_attr}')
+# Можно искать элементы передавая в параметры текст. Сам soup ищет только по полному содержимому текста в теге.
+# Но это можно исправить следующим способом. Можем использовать модуль регулярных выражений re, который имеет модуль compile (.re.compale()). Но он чувствителен к регистру, и для него слова одежда и Одежда будут разными
+find_a_by_text = soup.find('a', text=re.compile('одежда'))
+# Но можно указать поискать в обоих регистрах и найти все теги где есть текст одежда
+find_all_clothes = soup.find_all(text=re.compile('([Оо]дежда)'))
+print(find_all_clothes)
