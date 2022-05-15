@@ -1,0 +1,98 @@
+[
+    {
+        "person_name": "Sanae Abdi",
+        "person_company": "SPD",
+        "social_networks": [
+            "https://sanae-abdi.spd.de/",
+            "https://twitter.com/abdisanae?lang=de",
+            "https://www.instagram.com/sanae_ccaa/",
+            "https://www.facebook.com/sanaeabdispd"
+        ]
+    },
+    {
+        "person_name": "Valentin Abel",
+        "person_company": "FDP",
+        "social_networks": [
+            "https://www.valentin-abel.de",
+            "https://twitter.com/Valentin_C_Abel",
+            "https://www.instagram.com/valentin_christian_abel/",
+            "https://www.facebook.com/valentinabel.fdp",
+            "https://linkedin.com/in/valentin-christian-abel-8a4355114"
+        ]
+    },
+    {
+        "person_name": "Knut Abraham",
+        "person_company": "CDU/CSU",
+        "social_networks": [
+            "https://Knut-Abraham.de",
+            "https://facebook.com/knut.abraham"
+        ]
+    },
+    {
+        "person_name": "Katja Adler",
+        "person_company": "FDP",
+        "social_networks": [
+            "http://www.katja-adler.eu",
+            "https://twitter.com/katjadler",
+            "https://www.instagram.com/katj_ad",
+            "https://facebook.com/katjadler",
+            "https://www.linkedin.com/in/katja-adler-616308ba/"
+        ]
+    },
+    {
+        "person_name": "Stephanie Aeffner",
+        "person_company": "Bündnis 90/Die Grünen",
+        "social_networks": [
+            "https://aeffnerstephanie.de",
+            "https://www.instagram.com/stephanie_aeffner/",
+            "https://www.facebook.com/stephanie.aeffner",
+            "https://twitter.com/s_aeffner"
+        ]
+    },
+    {
+        "person_name": "Adis Ahmetovic",
+        "person_company": "SPD",
+        "social_networks": [
+            "http://www.adis-ahmetovic.de",
+            "http://www.facebook.de/AdisAhmetovic.SPD",
+            "http://www.instagram.de/adis.a93"
+        ]
+    },
+    {
+        "person_name": "Gökay Akbulut",
+        "person_company": "Die Linke",
+        "social_networks": [
+            "https://goekay-akbulut.de/",
+            "https://www.facebook.com/gokay.akbulut.146",
+            "https://twitter.com/akbulutgokay?lang=de",
+            "https://de.linkedin.com/in/g%C3%B6kay-akbulut-87b679200",
+            "https://www.instagram.com/gokayakbulut_mdb_linke/?hl=de"
+        ]
+    },
+    {
+        "person_name": "Ali Al-Dailami",
+        "person_company": "Die Linke",
+        "social_networks": []
+    },
+    {
+        "person_name": "Muhanad Al-Halak",
+        "person_company": "FDP",
+        "social_networks": [
+            "https://muhanad-al-halak.wahl.freie-demokraten.de/",
+            "https://www.facebook.com/AlHalakMuhanad/",
+            "https://mobile.twitter.com/halakmuhanad",
+            "https://www.instagram.com/al_halak_m/",
+            "https://vm.tiktok.com/ZMdyN661S/"
+        ]
+    },
+    {
+        "person_name": "Reem Alabali-Radovan",
+        "person_company": "SPD",
+        "social_networks": [
+            "https://reem-alabali-radovan.spd.de/",
+            "https://www.facebook.com/reem.alabaliradovan",
+            "https://twitter.com/ReemAlabali",
+            "https://www.instagram.com/reem.alabaliradovan/"
+        ]
+    }
+]
